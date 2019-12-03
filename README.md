@@ -3,11 +3,11 @@ pygame 으로 제작한 벽돌깨기
 
 # setting
 
-##python3
+python3
 
 
-##pygame
+pygame
  
 # start
 
-##python main.py
+python main.py
