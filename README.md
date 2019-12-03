@@ -2,8 +2,10 @@
 pygame 으로 제작한 벽돌깨기
 
 # setting
-  python3
-   ..pygame
+
+1.python3
+2.pygame
  
 # start
-   python main.py
+
+>> python main.py
