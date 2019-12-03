@@ -29,7 +29,7 @@ Mfont = pygame.font.SysFont("notosanscjkkr",80)
 Efont = pygame.font.SysFont("notosanscjkkr",180)
 
 # 효과음
-Sound = pygame.mixer.Sound("띠-딩.wav")
+Sound = pygame.mixer.Sound("./sound/dding.wav")
 
 # 게임 화면
 screen = pygame.display.set_mode((screenX,screenY))
@@ -37,14 +37,14 @@ screen = pygame.display.set_mode((screenX,screenY))
 # 이미지 불러오기 (공, 벽돌)
 ballSize = 20
 
-ballimage = pygame.image.load('ball.png').convert_alpha()
+ballimage = pygame.image.load('./img/ball.png').convert_alpha()
 ballimage = pygame.transform.scale(ballimage, (ballSize, ballSize))
 ball = Block(ballimage)
 
 brickSizeX = 120
 brickSizeY = 20
 
-brickimage = pygame.image.load('brick.png').convert_alpha()
+brickimage = pygame.image.load('./img/brick.png').convert_alpha()
 brick = Block(brickimage)
 #brickimage = pygame.transform.scale(brickimage,(120,20))
 
@@ -56,7 +56,7 @@ blockY = 25
 
 blockMargin = 3
 
-blockimage_red = pygame.image.load('block_red.png').convert_alpha()
+blockimage_red = pygame.image.load('./img/block_red.png').convert_alpha()
 blockimage_red = pygame.transform.scale(blockimage_red, (blockX, blockY))
 
 block_red = Block(blockimage_red)
@@ -65,7 +65,7 @@ block_red.rect.center = (1040,210)
 block.append(blockimage_red)
 
 
-blockimage_blue = pygame.image.load('block_blue.png').convert_alpha()
+blockimage_blue = pygame.image.load('./img/block_blue.png').convert_alpha()
 blockimage_blue = pygame.transform.scale(blockimage_blue, (blockX, blockY))
 
 block_blue = Block(blockimage_blue)
@@ -74,7 +74,7 @@ block_blue.rect.center = (1040,260)
 block.append(blockimage_blue)
 
 
-blockimage_yellow = pygame.image.load('block_yellow.png').convert_alpha()
+blockimage_yellow = pygame.image.load('./img/block_yellow.png').convert_alpha()
 blockimage_yellow = pygame.transform.scale(blockimage_yellow, (blockX, blockY))
 
 block_yellow = Block(blockimage_yellow)
@@ -83,7 +83,7 @@ block_yellow.rect.center = (1040,310)
 block.append(blockimage_yellow)
 
 
-blockimage_green = pygame.image.load('block_green.png').convert_alpha()
+blockimage_green = pygame.image.load('./img/block_green.png').convert_alpha()
 blockimage_green = pygame.transform.scale(blockimage_green, (blockX, blockY))
 
 block_green = Block(blockimage_green)
